@@ -1,0 +1,232 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #E8FFF5;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 10dvw;
+    background: linear-gradient(#0B1926,#020606);
+    padding: 5dvh 0;
+}
+
+
+/* ********* navbar ************* */
+
+.navbar{
+    color: #E8FFF5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 6dvw;
+}
+
+.navbar .logo-container{
+    color: #02ff95;
+    display: flex;
+    gap: 0.6dvw;
+}
+
+.logo-container .logoDesign{
+    width: 35px;
+    height: 33px;
+    text-align: center;
+}
+
+.logo-container .companyName h1{
+    font-size: 2.5dvw;
+    font-family: "Darker Grotesque";
+    font-weight: 900;
+    font-style: normal;
+    line-height: 4.7dvh;
+}
+
+.navbar .navItems{
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.5dvw;
+    line-height: 2.6dvh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3dvw;
+}
+
+.navbar .navItems a{
+    text-decoration: none;
+    color: #E8FFF5;
+    padding: 8px;
+    
+}
+.navbar .navItems a:hover{
+    color: #02ff95;
+    border-bottom: 1px solid #02ff95;
+    transition: 0.5s ease-in-out;
+}
+
+#caseStudies{
+    background-color: transparent;
+    color: #E8FFF5;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.5dvw;
+    line-height: 2.6dvh;
+}
+#caseStudies:hover{
+    color: #02ff95;
+    border-bottom: 1px solid #02ff95;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar .navItems .bookACall a{
+    background-color: #02ff95;
+    color: black;
+    padding: 2dvh 3dvw;
+    border-radius: 43px;
+}
+.navbar .navItems .bookACall a:hover{
+    box-shadow: 1px 1px 15px 0.5px #02ff95;
+}
+
+
+
+/* ********** home ************* */
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5dvw;
+}
+
+.heading{
+    text-align: center;
+    padding: 0 5.5dvw;
+}
+
+.heading h1{
+    color: #E8FFF5;
+    font-family: "Darker Grotesque";
+    font-weight: 900;
+    font-size: 7.1dvw;
+}
+.heading h1 span{
+    color: #02ff95;
+}
+
+.heading h4{
+    color: #D1FFEB;
+    font-family: sans-serif;
+    font-size: 2dvw;
+    font-weight: 400;
+}
+
+.heading h4 span{
+    display: block;
+}
+
+.callToAction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callToAction .cta{
+    list-style: none;
+    display: flex;
+}
+
+.callToAction .bookACall{
+    text-decoration: none;
+    background-color: #02ff95;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.5dvw;
+    padding: 2dvh 3dvw;
+    border: transparent;
+    border-radius: 43px;
+}
+.callToAction .bookACall:hover{
+    box-shadow: 1px 1px 15px 0.5px #02ff95;
+}
+
+.callToAction .emailId{
+    width: 33.8dvw;
+    border-radius: 43px;
+    margin-right: 1dvw;
+    padding: 8px 28px;
+}
+
+.rating-box{
+    position: relative;
+    top: 1.5dvw;
+    display: flex;
+    gap: 0.6dvw;
+    font-size: 1.7dvw;
+}
+
+.rating{
+    display: flex;
+    gap: 1dvw;
+}
+
+
+
+/* ******** footer ********** */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 6dvw;
+    color: #D1FFEB;
+}
+
+.footer-container .icon{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 64px;
+    width: 64px;
+    padding: 16px;
+    background-color: #003128;
+    border-radius: 50%;
+}
+
+.footer-container .icon .iconLogo{
+    position: relative;
+    top: 20%;
+}
+
+.footer-container > div{
+    width: 26dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+}
+
+.footer-container .details h3{
+    color: #01F38D;
+    font-family: "Darker Grotesque";
+    font-weight: 900;
+    font-size: 2.3dvw;
+}
+
+.footer-container .details p{
+    color: #D1FFEB;
+    position: relative;
+    top: 1dvh;
+    font-size: 1.7dvw;
+    font-family: sans-serif;
+    font-weight: 400;
+}
