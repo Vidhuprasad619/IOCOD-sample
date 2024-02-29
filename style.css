@@ -142,6 +142,7 @@
 .callToAction .cta{
     list-style: none;
     display: flex;
+    flex: 50%;
 }
 
 .callToAction .bookACall{
@@ -184,12 +185,12 @@
 /* ******** footer ********** */
 
 .footer-container{
+    margin: 0 6dvw;
+    color: #D1FFEB;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     text-align: center;
-    margin: 0 6dvw;
-    color: #D1FFEB;
 }
 
 .footer-container .icon{
@@ -209,10 +210,10 @@
 }
 
 .footer-container > div{
-    width: 26dvw;
     display: flex;
     flex-direction: column;
     gap: 1dvh;
+    flex: 25%;
 }
 
 .footer-container .details h3{
@@ -229,4 +230,61 @@
     font-size: 1.7dvw;
     font-family: sans-serif;
     font-weight: 400;
+}
+
+
+
+@media (max-width:768px){
+    .footer-container > div{
+        flex: 50%;
+        padding-bottom: 3dvw;
+    }
+    .footer-container .details p{
+        width: 26dvw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:567px){
+    .footer-container > div{
+        flex: 100%;
+        padding-bottom: 3dvw;
+    }
+    .footer-container .details p{
+        width: 26dvw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .callToAction .cta{
+        flex-direction: column;
+        gap: 3dvw;
+    }
+    .navbar .navItems{
+        font-size: 2dvw;
+    }
+    
+    .callToAction .bookACall{
+        font-size: 3dvw;
+    }
+    .navbar .logo-container{
+        margin-bottom: 2dvw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .logo-container .companyName h1{
+        font-size: 8dvw;
+    }
+    .navbar .navItems{
+        margin: 0 5dvw;
+    }
+    .navbar .navItems,#caseStudies{
+        font-size: 3dvw;
+    }
+    .navItems .bookACall{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 }
